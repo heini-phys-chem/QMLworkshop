@@ -1,7 +1,6 @@
 # Scripts for QMLightning for the Workshop
 
 ## install:
- - clone the git repo
  - install torch (`pip install torch`)
  - install cuda12-2 using (choose your system settings):
 ```
@@ -14,6 +13,10 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:$LD_LIBRARY_PATH
 export CUDA_HOME=/usr/local/cuda-12.2
 ```
  - make sure you have the correct nvidia drivers (type in tetrminal: `nvidia-smi` or `nvcc`)
+ - clone the git repo and installing it using:
+ ```
+ pip install . --no-build-isolation -v
+ ```
 
 
 ## usage:
