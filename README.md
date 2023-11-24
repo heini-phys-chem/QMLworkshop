@@ -37,6 +37,15 @@ python run_MD.py
 ```
 
 Some key things: The filename of the model which is loaded is usually hardcoded!, Make sure you have a `xyz` directory to store the coordinates of every nth step.
+The calculator python file for QMLightning has to be stored in ASE calculator directory.
 
-### TODO
-Upload the QMLightning calculator for ASE
+
+### making GIFs using Jmol
+Store all xyz coordinates into one xyz file, open it with jmol. In jmol go to `file/console`. In the console type:
+```
+script trajectorymoevie.jmol
+```
+This will write all xyz frames into .jpg files. Then you can use the ubuntu native `convert` to make a GIF:
+```
+convert -delay 10 -loop 0 *.jpg output.gif
+```
