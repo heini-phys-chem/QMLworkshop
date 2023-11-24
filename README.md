@@ -13,7 +13,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:$LD_LIBRARY_PATH
 export CUDA_HOME=/usr/local/cuda-12.2
 ```
  - make sure you have the correct nvidia drivers (type in tetrminal: `nvidia-smi` or `nvcc`)
- - clone the git repo (https://github.com/nickjbrowning/qml-lightning) and installing it using:
+ - clone the git repo (https://github.com/nickjbrowning/qml-lightning) and install it using:
  ```
  pip install . --no-build-isolation -v
  ```
